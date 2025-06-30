@@ -17,7 +17,7 @@ export class Triangle implements Figure {
     this.color = _color;
 
     if (this.a <= 0 || this.b <= 0 || this.c <= 0) {
-      throw new Error('One of sides is <= 8');
+      throw new Error('One of sides is <= 0');
     }
 
     if (
@@ -52,7 +52,7 @@ export class Circle implements Figure {
     this.color = _color;
 
     if (this.a <= 0) {
-      throw new Error('One of sides is <= 8');
+      throw new Error('One of sides is <= 0');
     }
   }
 
@@ -74,7 +74,7 @@ export class Rectangle implements Figure {
     this.color = _color;
 
     if (this.a <= 0 || this.b <= 0) {
-      throw new Error('One of sides is <= 8');
+      throw new Error('One of sides is <= 0');
     }
   }
 
